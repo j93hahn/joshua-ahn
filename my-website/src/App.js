@@ -1,5 +1,17 @@
 import logo from './svg/logo.svg';
+import github from './svg/github.svg';
 import './App.css';
+
+/*
+ * Model portfolios to follow:
+ * 1. https://benrogers.dev/index.html#projects
+ * 2. http://www.meganlandau.com
+ * 3. https://www.seanhalpin.design ***
+ * 4. https://danielkorpai.com/?ref=hackernoon.com ***
+ * 5. https://brittanychiang.com/#projects ***
+ * 6. http://riccardozanutta.com/?ref=hackernoon.com ***
+ * 7. https://hackernoon.com/21-best-developer-portfolio-examples-p61j31wi
+ */
 
 /*
  * Important commands:
@@ -15,10 +27,10 @@ class socialMedia { // object for social media pages
     }
 }
 
-const LinkedIn = new socialMedia("LinkedIn", <a href="https://www.linkedin.com/in/joshua-ahn-uchicago/">LinkedIn</a>);
-const Github = new socialMedia("GitHub", <a href="https://github.com/j93hahn">Github</a>);
-const Instagram = new socialMedia("Instagram", <a href="https://www.instagram.com/_joshuaahn/">Instagram</a>);
-const Facebook = new socialMedia("Facebook", <a href="https://www.facebook.com/j93hahn/">Facebook</a>);
+const LinkedIn = new socialMedia("LinkedIn", "https://www.linkedin.com/in/joshua-ahn-uchicago/");
+const Github = new socialMedia("GitHub", "https://github.com/j93hahn");
+const Instagram = new socialMedia("Instagram", "https://www.instagram.com/_joshuaahn/");
+const Facebook = new socialMedia("Facebook", "https://www.facebook.com/j93hahn/");
 
 class projectContainer { // object for project displays
     constructor(name, code) {
@@ -35,28 +47,10 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    {Perceptron.name}
-                    {Transformer.name}
-                </p>
-                <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Learn React
+                <a href={Github.link} target="_blank" rel="noopener noreferrer">
+                    <img src={github} className="Social-media" alt="Github link" />
                 </a>
             </header>
-            <div>
-                {LinkedIn.link}
-                {Github.link}
-                {Instagram.link}
-                {Facebook.link}
-            </div>
         </div>
     );
 }
