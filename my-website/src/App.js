@@ -1,5 +1,6 @@
-import logo from './svg/logo.svg';
-import github from './svg/github.svg';
+import { projects } from './projects.js';
+import { socials, aboutMe, contact } from './personal.js';
+import { college } from './education.js';
 import './App.css';
 
 /*
@@ -20,37 +21,14 @@ import './App.css';
  * 3. npm run deploy - deploy the App to github pages (build included)
  */
 
-class socialMedia { // object for social media pages
-    constructor(name, link) {
-        this.name = name;
-        this.link = link;
-    }
-}
-
-const LinkedIn = new socialMedia("LinkedIn", "https://www.linkedin.com/in/joshua-ahn-uchicago/");
-const Github = new socialMedia("GitHub", "https://github.com/j93hahn");
-const Instagram = new socialMedia("Instagram", "https://www.instagram.com/_joshuaahn/");
-const Facebook = new socialMedia("Facebook", "https://www.facebook.com/j93hahn/");
-
-class projectContainer { // object for project displays
-    constructor(name, code) {
-        this.name = name;
-        this.code = code; // Github source code link
-    }
-}
-
-const Perceptron = new projectContainer("Multi-Layer Perceptron", "");
-const Transformer = new projectContainer("Transformer", "");
-
 function App() {
     return (
         <div className="App">
+            {aboutMe()}
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <a href={Github.link} target="_blank" rel="noopener noreferrer">
-                    <img src={github} className="Social-media" alt="Github link" />
-                </a>
+                {socials.github.display()}
             </header>
+            {projects.perceptron.display()}
         </div>
     );
 }

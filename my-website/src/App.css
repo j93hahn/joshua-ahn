@@ -2,9 +2,8 @@
     text-align: center;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+.About-me {
+    min-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -30,8 +29,12 @@
 
 .Social-media {
     display: flex;
-    height: 100vmin;
+    height: 20vmin;
     color: #194eb8;
+}
+
+.Project-container {
+    min-height: 100vh;
 }
 
 @keyframes App-logo-spin {
