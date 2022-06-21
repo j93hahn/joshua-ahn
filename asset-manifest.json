@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/joshua-ahn/static/css/main.073c9b0a.css",
-    "main.js": "/joshua-ahn/static/js/main.86d68c50.js",
+    "main.css": "/joshua-ahn/static/css/main.83d1cd3a.css",
+    "main.js": "/joshua-ahn/static/js/main.9ea6f7bd.js",
     "static/js/787.bbe01249.chunk.js": "/joshua-ahn/static/js/787.bbe01249.chunk.js",
-    "static/media/logo.svg": "/joshua-ahn/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/instagram.svg": "/joshua-ahn/static/media/instagram.b0a8a3456356050f7aa09bb770aecc32.svg",
+    "static/media/github.svg": "/joshua-ahn/static/media/github.197212f02efa31cf1fd6ce8f39191593.svg",
     "index.html": "/joshua-ahn/index.html",
-    "main.073c9b0a.css.map": "/joshua-ahn/static/css/main.073c9b0a.css.map",
-    "main.86d68c50.js.map": "/joshua-ahn/static/js/main.86d68c50.js.map",
+    "static/media/linkedin.svg": "/joshua-ahn/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
+    "static/media/facebook.svg": "/joshua-ahn/static/media/facebook.4b266d41aedcba79b84b62c43d2f6527.svg",
+    "main.83d1cd3a.css.map": "/joshua-ahn/static/css/main.83d1cd3a.css.map",
+    "main.9ea6f7bd.js.map": "/joshua-ahn/static/js/main.9ea6f7bd.js.map",
     "787.bbe01249.chunk.js.map": "/joshua-ahn/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.86d68c50.js"
+    "static/css/main.83d1cd3a.css",
+    "static/js/main.9ea6f7bd.js"
   ]
 }
