@@ -8,15 +8,27 @@ import './App.css';
  * 3. npm run deploy - deploy the App to github pages (build included)
  */
 
-class project_container { // object for project displays
-    constructor(name, topic) {
+class socialMedia { // object for social media pages
+    constructor(name, link) {
         this.name = name;
-        this.topic = topic;
+        this.link = link;
     }
 }
 
-const MLP = new project_container("Multi-Layer Perceptron", "Machine Learning");
-const Transformer = new project_container("Transformer", "Machine Learning");
+const LinkedIn = new socialMedia("LinkedIn", <a href="https://www.linkedin.com/in/joshua-ahn-uchicago/">LinkedIn</a>);
+const Github = new socialMedia("GitHub", <a href="https://github.com/j93hahn">Github</a>);
+const Instagram = new socialMedia("Instagram", <a href="https://www.instagram.com/_joshuaahn/">Instagram</a>);
+const Facebook = new socialMedia("Facebook", <a href="https://www.facebook.com/j93hahn/">Facebook</a>);
+
+class projectContainer { // object for project displays
+    constructor(name, code) {
+        this.name = name;
+        this.code = code; // Github source code link
+    }
+}
+
+const Perceptron = new projectContainer("Multi-Layer Perceptron", "");
+const Transformer = new projectContainer("Transformer", "");
 
 function App() {
     return (
@@ -27,7 +39,7 @@ function App() {
                     Edit <code>src/App.js</code> and save to reload.
                 </p>
                 <p>
-                    {MLP.name}
+                    {Perceptron.name}
                     {Transformer.name}
                 </p>
                 <a
@@ -39,6 +51,12 @@ function App() {
                 Learn React
                 </a>
             </header>
+            <div>
+                {LinkedIn.link}
+                {Github.link}
+                {Instagram.link}
+                {Facebook.link}
+            </div>
         </div>
     );
 }
