@@ -11,7 +11,8 @@ import './App.css';
  * 4. https://danielkorpai.com/?ref=hackernoon.com ***
  * 5. https://brittanychiang.com/#projects ***
  * 6. http://riccardozanutta.com/?ref=hackernoon.com ***
- * 7. https://hackernoon.com/21-best-developer-portfolio-examples-p61j31wi
+ * 7. https://www.edwardh.io/#projects ********** INSANE
+ * 8. https://hackernoon.com/21-best-developer-portfolio-examples-p61j31wi
  */
 
 /*
