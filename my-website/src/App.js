@@ -4,18 +4,6 @@ import { college } from './education.js';
 import './App.css';
 
 /*
- * Model portfolios to follow:
- * 1. https://benrogers.dev/index.html#projects
- * 2. http://www.meganlandau.com
- * 3. https://www.seanhalpin.design ***
- * 4. https://danielkorpai.com/?ref=hackernoon.com ***
- * 5. https://brittanychiang.com/#projects ***
- * 6. http://riccardozanutta.com/?ref=hackernoon.com ***
- * 7. https://www.edwardh.io/#projects ********** INSANE
- * 8. https://hackernoon.com/21-best-developer-portfolio-examples-p61j31wi
- */
-
-/*
  * Important commands:
  * 1. npm start - runs localhost environment
  * 2. npm run build - builds production environment
