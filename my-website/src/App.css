@@ -1,15 +1,5 @@
-/**********/
-/* App.js */
-/**********/
-
 .App {
     text-align: center;
-}
-
-
-
-.About-me {
-    min-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -31,20 +21,6 @@
 
 .App-link {
     color: #61dafb;
-}
-
-.Social-media {
-    display: flex;
-    height: 20vmin;
-    color: #194eb8;
-}
-
-.Project-container {
-    min-height: 100vh;
-}
-
-.Activity {
-    height: 20vmin;
 }
 
 @keyframes App-logo-spin {

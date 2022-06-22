@@ -1,7 +1,8 @@
-import { projects } from './projects.js';
-import { socials, aboutMe, contact } from './personal.js';
-import { college } from './education.js';
+import { projects } from './projects/projects.js';
+import { socials, aboutMe, contact } from './personal/personal.js';
+import { college } from './education/education.js';
 import './App.css';
+
 
 /*
  * Important commands:
@@ -9,6 +10,7 @@ import './App.css';
  * 2. npm run build - builds production environment
  * 3. npm run deploy - deploy the App to github pages (build included)
  */
+
 
 function App() {
     return (
@@ -20,6 +22,7 @@ function App() {
             {projects.perceptron.display()}
         </div>
     );
-}
+};
+
 
 export default App;

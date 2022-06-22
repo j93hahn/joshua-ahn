@@ -1,0 +1,9 @@
+.Social-media {
+    display: flex;
+    height: 20vmin;
+    color: #194eb8;
+}
+
+.About-me {
+    min-height: 100vh;
+}

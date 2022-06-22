@@ -1,4 +1,5 @@
-import './App.css';
+import './projects.css';
+
 
 class ProjectContainer { // object for project displays
     constructor(name, code, description, visual) {
@@ -14,7 +15,8 @@ class ProjectContainer { // object for project displays
             </div>
         );
     }
-}
+};
+
 
 export const projects = {
     perceptron: new ProjectContainer(

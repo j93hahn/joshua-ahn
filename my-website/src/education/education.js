@@ -1,4 +1,39 @@
-import './App.css';
+import './education.css';
+
+
+class Course {
+    constructor(title, professors, number) {
+        this.title = title;
+        this.professors = professors;
+        this.number = number;
+    }
+    display() {
+        return (
+            <div className="Course">
+
+            </div>
+        );
+    }
+};
+
+
+class Position {
+    constructor(title, professors, number, position, term) {
+        this.title = title;
+        this.professors = professors;
+        this.number = number;
+        this.position = position;
+        this.term = term;
+    }
+    display() {
+        return (
+            <div>
+
+            </div>
+        );
+    }
+};
+
 
 class Activity {
     constructor(name, start, end, position, description, src) {
@@ -16,6 +51,7 @@ class Activity {
     }
 };
 
+
 export const college = {
     overall: {
         school: `The University of Chicago`,
@@ -25,55 +61,57 @@ export const college = {
         graduation: `Class of 2024`
     },
     relevantCoursework: { // intro, systems, theory, electives ordering
-        courses: [
+        151: new Course(
             `Introduction to Computer Science I`,
-            `Introduction to Computer Science II`,
-            `Introduction to Computer Systems`,
-            `Computer Architecture`,
-            `Discrete Mathematics`,
-            `Theory of Algorithms`,
-            `Independent Reading and Research`
-        ],
-        professors: [
             `Adam Shaw, Timothy Ng`,
+            `CMSC 15100`
+        ),
+        152: new Course(
+            `Introduction to Computer Science II`,
             `Anne Rogers, Hannah Morgan`,
+            `CMSC 15200`
+        ),
+        154: new Course(
+            `Introduction to Computer Systems`,
             `Yanjing Li, Junchen Jiang`,
+            `CMSC 15400`
+        ),
+        222: new Course(
+            `Computer Architecture`,
             `Yanjing Li`,
+            `CMSC 22200`
+        ),
+        271: new Course(
+            `Discrete Mathematics`,
             `Janos Simons, Aaron Potechin`,
+            `CMSC 27100`
+        ),
+        272: new Course(
+            `Theory of Algorithms`,
             `Lorenzo Orecchia`,
-            `Greg Shakhnarovich`
-        ],
-        numbers: [
-            `CMSC 15100`,
-            `CMSC 15200`,
-            `CMSC 15400`,
-            `CMSC 22200`,
-            `CMSC 27100`,
-            `CMSC 27200`,
+            `CMSC 27200`
+        ),
+        297: new Course(
+            `Independent Reading and Research`,
+            `Greg Shakhnarovich`,
             `CMSC 29700`
-        ]
+        )
     },
     teachingPositions: { // chronologically ordered
-        courses: [
+        p1: new Position(
             `Computer Architecture for Scientists`,
-            `Introduction to Computer Systems`
-        ],
-        professors: [
             `Andrew Chien`,
-            `Yanjing Li, Junchen Jiang`
-        ],
-        numbers: [
             `CMSC 22240`,
-            `CMSC 15400`
-        ],
-        positions: [
             `Grader`,
-            `Teaching Assistant`
-        ],
-        terms: [
-            `Winter 2022`,
+            `Winter 2022`
+        ),
+        p2: new Position(
+            `Introduction to Computer Systems`,
+            `Yanjing Li, Junchen Jiang`,
+            `CMSC 15400`,
+            `Teaching Assistant`,
             `Spring 2022`
-        ]
+        )
     },
     activities: {
         ktp: new Activity(

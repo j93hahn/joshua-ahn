@@ -2,7 +2,8 @@ import linkedin from './svg/linkedin.svg';
 import github from './svg/github.svg';
 import instagram from './svg/instagram.svg';
 import facebook from './svg/facebook.svg';
-import './App.css';
+import './personal.css';
+
 
 class SocialMedia { // object for social media pages
     constructor(name, link, logo, alt) {
@@ -19,6 +20,7 @@ class SocialMedia { // object for social media pages
         );
     }
 };
+
 
 export const socials = {
     linkedIn: new SocialMedia(
@@ -47,11 +49,12 @@ export const socials = {
     )
 };
 
+
 export const contact = { // contact information
     email: "jjahn@uchicago.edu",
-    emailAlt: "joshuajahn2001@gmail.com",
-    number: "224-766-6410"
+    emailAlt: "joshuajahn2001@gmail.com"
 };
+
 
 export function aboutMe() {
     const status = "rising"; // "current"
