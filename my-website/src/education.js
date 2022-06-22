@@ -1,12 +1,18 @@
 import './App.css';
 
-class activity {
-    constructor(name, start, end, position, description) {
+class Activity {
+    constructor(name, start, end, position, description, src) {
         this.name = name;
         this.start = start;
         this.end = end;
         this.position = position;
         this.description = description;
+        this.src;
+    }
+    display() {
+        return (
+            <img src={this.src} className="Activity" alt={this.name} />
+        );
     }
 };
 
@@ -70,46 +76,52 @@ export const college = {
         ]
     },
     activities: {
-        ktp: new activity(
+        ktp: new Activity(
             `Kappa Theta Pi`,
             `March 2022`,
             `Present`,
             `Member`,
+            ``,
             ``
         ),
-        frp: new activity(
+        frp: new Activity(
             `Food Run Project`,
             `October 2020`,
             `Present`,
             `Co-President, Treasurer`,
+            ``,
             ``
         ),
-        research: new activity(
+        research: new Activity(
             `Perceptron and Learning Systems Research Group`,
             `December 2021`,
             `Present`,
             `Undergraduate Researcher`,
+            ``,
             ``
         ),
-        music: new activity(
+        music: new Activity(
             `University Symphony Orchestra`,
             `September 2020`,
             `Present`,
             `Cellist`,
+            ``,
             ``
         ),
-        mtm: new activity(
+        mtm: new Activity(
             `Maroon Tutor Match`,
             `September 2020`,
             `Present`,
             `Tutor`,
+            ``,
             ``
         ),
-        uh: new activity(
+        uh: new Activity(
             `Uncommon Hacks`,
             `Spring 2021`,
             `Present`,
             `Member`,
+            ``,
             ``
         )
     }

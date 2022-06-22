@@ -1,9 +1,11 @@
 import './App.css';
 
-class projectContainer { // object for project displays
-    constructor(name, code) {
+class ProjectContainer { // object for project displays
+    constructor(name, code, description, visual) {
         this.name = name;
         this.code = code; // link to Github source code
+        this.description = description;
+        this.visual = visual;
     }
     display() {
         return (
@@ -15,12 +17,22 @@ class projectContainer { // object for project displays
 }
 
 export const projects = {
-    perceptron: new projectContainer(
+    perceptron: new ProjectContainer(
         "Multi-Layer Perceptron",
+        "",
+        "",
         ""
     ),
-    transformer: new projectContainer(
+    transformer: new ProjectContainer(
         "Transformer",
+        "",
+        "",
+        ""
+    ),
+    cpu: new ProjectContainer(
+        "Microprocessor Simulation",
+        "",
+        "",
         ""
     )
 };

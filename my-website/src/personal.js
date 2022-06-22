@@ -4,7 +4,7 @@ import instagram from './svg/instagram.svg';
 import facebook from './svg/facebook.svg';
 import './App.css';
 
-class socialMedia { // object for social media pages
+class SocialMedia { // object for social media pages
     constructor(name, link, logo, alt) {
         this.name = name;
         this.link = link;
@@ -21,25 +21,25 @@ class socialMedia { // object for social media pages
 };
 
 export const socials = {
-    linkedIn: new socialMedia(
+    linkedIn: new SocialMedia(
         "LinkedIn",
         "https://www.linkedin.com/in/joshua-ahn-uchicago/",
         linkedin,
         "LinkedIn Profile"
     ),
-    github: new socialMedia(
+    github: new SocialMedia(
         "GitHub",
         "https://github.com/j93hahn",
         github,
         "Github Profile"
     ),
-    instagram: new socialMedia(
+    instagram: new SocialMedia(
         "Instagram",
         "https://www.instagram.com/_joshuaahn/",
         instagram,
         "Instagram profile"
     ),
-    facebook: new socialMedia(
+    facebook: new SocialMedia(
         "Facebook",
         "https://www.facebook.com/j93hahn/",
         facebook,

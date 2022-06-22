@@ -1,6 +1,12 @@
+/**********/
+/* App.js */
+/**********/
+
 .App {
     text-align: center;
 }
+
+
 
 .About-me {
     min-height: 100vh;
@@ -35,6 +41,10 @@
 
 .Project-container {
     min-height: 100vh;
+}
+
+.Activity {
+    height: 20vmin;
 }
 
 @keyframes App-logo-spin {
