@@ -42,7 +42,7 @@ class Activity {
         this.end = end;
         this.position = position;
         this.description = description;
-        this.src;
+        this.src = src;
     }
     display() {
         return (
