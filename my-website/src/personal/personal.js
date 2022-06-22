@@ -11,14 +11,14 @@ class SocialMedia { // object for social media pages
         this.link = link;
         this.logo = logo;
         this.alt = alt;
-    }
+    };
     display() {
         return (
             <a href={this.link} target="_blank" rel="noopener noreferrer">
                 <img src={this.logo} className="Social-media" alt={this.alt} />
             </a>
         );
-    }
+    };
 };
 
 

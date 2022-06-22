@@ -20,6 +20,9 @@ function App() {
                 {socials.github.display()}
             </header>
             {projects.perceptron.display()}
+            <header>
+                {Object.keys(college.activities).length}
+            </header>
         </div>
     );
 };

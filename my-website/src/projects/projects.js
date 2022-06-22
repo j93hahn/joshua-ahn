@@ -7,14 +7,14 @@ class ProjectContainer { // object for project displays
         this.code = code; // link to Github source code
         this.description = description;
         this.visual = visual;
-    }
+    };
     display() {
         return (
             <div classname="Project-container">
 
             </div>
         );
-    }
+    };
 };
 
 

@@ -6,14 +6,14 @@ class Course {
         this.title = title;
         this.professors = professors;
         this.number = number;
-    }
+    };
     display() {
         return (
             <div className="Course">
 
             </div>
         );
-    }
+    };
 };
 
 
@@ -24,14 +24,14 @@ class Position {
         this.number = number;
         this.position = position;
         this.term = term;
-    }
+    };
     display() {
         return (
-            <div>
+            <div className="Position">
 
             </div>
         );
-    }
+    };
 };
 
 
@@ -43,12 +43,12 @@ class Activity {
         this.position = position;
         this.description = description;
         this.src = src;
-    }
+    };
     display() {
         return (
             <img src={this.src} className="Activity" alt={this.name} />
         );
-    }
+    };
 };
 
 
