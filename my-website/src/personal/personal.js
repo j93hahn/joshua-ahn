@@ -39,7 +39,7 @@ export const socials = {
         "Instagram",
         "https://www.instagram.com/_joshuaahn/",
         instagram,
-        "Instagram profile"
+        "Instagram Profile"
     ),
     facebook: new SocialMedia(
         "Facebook",
