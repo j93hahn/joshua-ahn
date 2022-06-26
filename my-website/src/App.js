@@ -1,5 +1,5 @@
 // import { projects } from './projects/projects.js';
-// import { socials, aboutMe, contact } from './personal/personal.js';
+import { socials, aboutMe, contact } from './personal/personal.js';
 // import { college } from './education/education.js';
 import './App.css';
 import { particles } from "./particle.js";
@@ -14,6 +14,7 @@ function App() {
             <div id="particles">
                 {particles}
             </div>
+            {aboutMe()}
         </div>
     );
 
