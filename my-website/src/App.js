@@ -6,7 +6,16 @@ import { particles } from "./particle.js";
 
 
 function App() {
-    return particles;
+    return (
+        <div className="App">
+            <header className="App-header">
+                HELLO
+            </header>
+            <div id="particles">
+                {particles}
+            </div>
+        </div>
+    );
 
 
     /*(

@@ -1,5 +1,9 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { loadLineShape } from "tsparticles-shape-line";
+// import * as lines from "./digitizedlines.jpg";
+// import brain from './personal/svg/brain.svg';
+import './App.css';
 
 
 const particlesInit = async (main) => {
@@ -20,9 +24,10 @@ const particlesLoaded = (container) => {
 const options = {
     background: {
         color: {
-            value: "#0d47a1",
+            value: "#000000",
         },
     },
+    presets: loadLineShape,
     fpsLimit: 120,
     interactivity: {
         events: {
@@ -32,18 +37,25 @@ const options = {
             },
             onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: "bubble"
             },
             resize: true,
         },
         modes: {
             push: {
-            quantity: 4,
+                quantity: 4,
             },
             repulse: {
-            distance: 200,
-            duration: 0.4,
+                distance: 200,
+                duration: 0.4,
             },
+            bubble: {
+                opacity: 0.5,
+                size: 18,
+                color: {
+                    value: "#ffffff"
+                }
+            }
         },
     },
     particles: {
@@ -90,12 +102,31 @@ const options = {
             },
         },
     },
+    /*polygon: {
+        draw: {
+            enable: true,
+            lineColor: "rgba(0,255,255,0.2)",
+            lineWidth: 0.5
+        },
+        move: {
+            radius: 1
+        },
+        position: {
+            x: 30,
+            y: 30
+        },
+        inlineArrangement: "equidistant",
+        scale: 1,
+        type: "inline",
+        data: brain,
+    },*/
     detectRetina: true,
 };
 
 
 export const particles = (
     <Particles
+        className="particles"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
