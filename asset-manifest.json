@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/joshua-ahn/static/css/main.7d06d544.css",
-    "main.js": "/joshua-ahn/static/js/main.03f9c086.js",
+    "main.css": "/joshua-ahn/static/css/main.01ad435b.css",
+    "main.js": "/joshua-ahn/static/js/main.fdbdd607.js",
     "static/js/787.bbe01249.chunk.js": "/joshua-ahn/static/js/787.bbe01249.chunk.js",
+    "static/media/instagram.svg": "/joshua-ahn/static/media/instagram.b0a8a3456356050f7aa09bb770aecc32.svg",
+    "static/media/github.svg": "/joshua-ahn/static/media/github.197212f02efa31cf1fd6ce8f39191593.svg",
     "index.html": "/joshua-ahn/index.html",
-    "main.7d06d544.css.map": "/joshua-ahn/static/css/main.7d06d544.css.map",
-    "main.03f9c086.js.map": "/joshua-ahn/static/js/main.03f9c086.js.map",
+    "static/media/linkedin.svg": "/joshua-ahn/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
+    "static/media/facebook.svg": "/joshua-ahn/static/media/facebook.4b266d41aedcba79b84b62c43d2f6527.svg",
+    "main.01ad435b.css.map": "/joshua-ahn/static/css/main.01ad435b.css.map",
+    "main.fdbdd607.js.map": "/joshua-ahn/static/js/main.fdbdd607.js.map",
     "787.bbe01249.chunk.js.map": "/joshua-ahn/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d06d544.css",
-    "static/js/main.03f9c086.js"
+    "static/css/main.01ad435b.css",
+    "static/js/main.fdbdd607.js"
   ]
 }
