@@ -43,5 +43,5 @@ export const projects = {
 const futureProjects = [
     "Creating a compiler",
     "Designing a game",
-    "Creating websites for Daniel and Dad"
+    "Creating websites for Dad"
 ];
